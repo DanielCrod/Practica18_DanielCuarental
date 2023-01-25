@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertarActivity">
+
+    <EditText
+        android:id="@+id/nBastidor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Número de bastidor"/>
+
+    <EditText
+        android:id="@+id/marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Marca"
+        android:layout_below="@id/nBastidor"/>
+
+    <EditText
+        android:id="@+id/modelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Modelo"
+        android:layout_below="@id/marca"/>
+
+    <Spinner
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/modelo"/>
+
+    <Spinner
+        android:id="@+id/combustible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/color"/>
+
+    <EditText
+        android:id="@+id/km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Kilometraje"
+        android:layout_below="@+id/combustible"/>
+
+    <Button
+        android:id="@+id/insertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSERTAR"
+        android:layout_below="@+id/km"/>
+
+
+</RelativeLayout>
